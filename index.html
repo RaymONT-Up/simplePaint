@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Paint In web</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="paint.js"></script>
+  </head>
+  <body>
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <div class="controls">
+      <div class="controls__colors" id="jsColors">
+        <button
+          class="controls__color jsColor jsColorDefault"
+          style="background-color: black"
+        ></button>
+        <button
+          class="controls__color jsColor"
+          style="background-color: white"
+        ></button>
+        <button
+          class="controls__color jsColor"
+          style="background-color: orange"
+        ></button>
+        <button
+          class="controls__color jsColor"
+          style="background-color: green"
+        ></button>
+        <button
+          class="controls__color jsColor"
+          style="background-color: blue"
+        ></button>
+        <button
+          class="controls__color jsColor"
+          style="background-color: red"
+        ></button>
+
+        <input
+          id="jsColorInput"
+          class="controls__color controls__color--input jsColor"
+          type="color"
+        />
+      </div>
+      <div class="controls__btns">
+        <button id="jsMode" class="control__btn">Fill</button>
+        <a id="jsSave" class="control__btn" href="" download>Save</a>
+        <input
+          id="jsRange"
+          class="control__range"
+          type="range"
+          min="0.03"
+          max="50.00"
+          value="5.00"
+          step="any"
+        />
+      </div>
+    </div>
+  </body>
+</html>
